@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hints and Help</title>
+  <style>
+    /* CSS-Styling für die Webanwendung */
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    .tab-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #ccc;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .tab.active {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .description {
+      margin-bottom: 20px;
+    }
+
+    .hints-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hint {
+      margin-bottom: 10px;
+    }
+
+    .hint-button {
+      margin-top: 10px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Hints and Help</h1>
+  </div>
+
+  <div class="content">
+    <div class="tab-container">
+      <div class="tab active" id="tab1">Schwachstelle 1</div>
+      <div class="tab" id="tab2">Schwachstelle 2</div>
+      <div class="tab" id="tab3">Schwachstelle 3</div>
+      <div class="tab" id="tab4">Schwachstelle 4</div>
+      <div class="tab" id="tab5">Schwachstelle 5</div>
+    </div>
+
+    <div class="description" id="description">
+      <!-- Hier wird die Beschreibung zur ausgewählten Schwachstelle eingefügt -->
+    </div>
+
+    <div class="hints-container" id="hints-container">
+      <!-- Hier werden die freigeschalteten Hinweise angezeigt -->
+    </div>
+  </div>
+
+  <script>
+    // JavaScript-Code für die Funktionalitäten der Webanwendung
+    const tabs = document.querySelectorAll('.tab');
+    const description = document.getElementById('description');
+    const hintsContainer = document.getElementById('hints-container');
+    let currentTab = 1;
+    let currentHint = 1;
+    const hintsData = [
+      // Hinzufügen der Hinweise für jede Schwachstelle
+      [
+        "Hinweis 1 zur Schwachstelle 1...",
+        "Hinweis 2 zur Schwachstelle 1...",
+        "Hinweis 3 zur Schwachstelle 1..."
+      ],
+      [
+        "Hinweis 1 zur Schwachstelle 2...",
+        "Hinweis 2 zur Schwachstelle 2...",
+        "Hinweis 3 zur Schwachstelle 2..."
+      ],
+      [
+        "Hinweis 1 zur Schwachstelle 3...",
+        "Hinweis 2 zur Schwachstelle 3...",
+        "Hinweis 3 zur Schwachstelle 3..."
+      ],
+      [
+        "Hinweis 1 zur Schwachstelle 4...",
+        "Hinweis 2 zur Schwachstelle 4...",
+        "Hinweis 3 zur Schwachstelle 4..."
+      ],
+      [
+        "Hinweis 1 zur Schwachstelle 5...",
+        "Hinweis 2 zur Schwachstelle 5...",
+        "Hinweis 3 zur Schwachstelle 5..."
+      ]
+    ];
+
+    function setActiveTab(tabIndex) {
+      currentTab = tabIndex;
+
+      tabs.forEach((tab, index) => {
+        if (index + 1 === tabIndex) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+
+      // Hier können Sie die Beschreibung zur ausgewählten Schwachstelle einfügen
+      description.innerHTML = `Beschreibung zur Schwachstelle ${tabIndex}`;
+    }
+
+    function showNextHint() {
+      if (currentHint < hintsData[currentTab - 1].length) {
+        const hint = document.createElement('div');
+        hint.className = 'hint';
+        hint.innerHTML = hintsData[currentTab - 1][currentHint];
+        hintsContainer.appendChild(hint);
+        currentHint++;
+      }
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        setActiveTab(index + 1);
+      });
+    });
+
+    hintsContainer.addEventListener('click', showNextHint);
+  </script>
+</body>
+</html>
+
+
+

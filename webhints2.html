@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hints and Help</title>
+
+ <!--Integration von Bulma-->
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+ <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+ <script src="script2.js"></script>
+ <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+
+  <header>
+    <h1>Hints and Help</h1>
+    <nav>
+      <ul id="toolbar">
+        <li><a href="#schwachstelle1" onclick="switchVulnerability('schwachstelle1')">Schwachstelle 1</a></li>
+        <li><a href="#schwachstelle2" onclick="switchVulnerability('schwachstelle2')">Schwachstelle 2</a></li>
+        <li><a href="#schwachstelle3" onclick="switchVulnerability('schwachstelle3')">Schwachstelle 3</a></li>
+        <li><a href="#schwachstelle4" onclick="switchVulnerability('schwachstelle4')">Schwachstelle 4</a></li>
+        <li><a href="#schwachstelle5" onclick="switchVulnerability('schwachstelle5')">Schwachstelle 5</a></li>
+      </ul>
+    </nav>
+ 
+    
+  </header>
+
+  <main>
+
+    <!-- Hinweise zu Schwachstelle 1 -->
+
+    <section id="schwachstelle1" class="vulnerability has-text-centered">
+      <h2>Schwachstelle 1: Beschreibung</h2>
+      <p>Hier wird die Schwachstelle 1 kurz beschrieben.</p>
+
+      <div class="hint hidden" id="hinweis1">
+        <h3>Hinweis 1</h3>
+        <p>Dies ist der erste Hinweis zur Schwachstelle 1.</p>
+        <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        <!--Button-Design verändern mit Bulma via class="button is-primary is-rounded is-medium"-->
+      <!--kleiner Button-->
+      </div>
+
+      <div class="hint hidden">
+        <h3>Hinweis 2</h3>
+        <p>Dies ist der zweite Hinweis zur Schwachstelle 1.</p>
+        <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+      </div>
+
+      <div class="hint hidden">
+        <h3>Hinweis 3</h3>
+        <p>Dies ist der dritte Hinweis zur Schwachstelle 1.</p>
+        <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+      </div>
+
+      <div class="hint hidden">
+        <h3>Hinweis 4</h3>
+        <p>Dies ist der vierte Hinweis zur Schwachstelle 1.</p>
+        <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+      </div>
+
+      <div class="hint hidden">
+        <h3>Hinweis 5</h3>
+        <p>Dies ist der fünfte und letzte Hinweis zur Schwachstelle 1.</p>
+      </div>
+     
+      </section>
+
+    <!-- Hinweise zu Schwachstelle 2 -->
+
+    <section id="schwachstelle2" class="vulnerability has-text-centered">
+      <h2>Schwachstelle 2: Beschreibung</h2>
+      <p>Hier wird die Schwachstelle 2 kurz beschrieben.</p>
+
+      <div class="hint">
+        <h3>Hinweis 1</h3>
+        <p>Dies ist der erste Hinweis zur Schwachstelle 2.</p>
+        <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+      </div>
+
+      <div class="hint hidden">
+        <h3>Hinweis 2</h3>
+        <p>Dies ist der zweite Hinweis zur Schwachstelle 2.</p>
+        <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+      </div>
+
+      <div class="hint hidden">
+        <h3>Hinweis 3</h3>
+        <p>Dies ist der dritte Hinweis zur Schwachstelle 2.</p>
+        <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+      </div>
+
+      <div class="hint hidden">
+        <h3>Hinweis 4</h3>
+        <p>Dies ist der vierte Hinweis zur Schwachstelle 2.</p>
+        <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+      </div>
+
+      <div class="hint hidden">
+        <h3>Hinweis 5</h3>
+        <p>Dies ist der fünfte und letzte Hinweis zur Schwachstelle 2.</p>
+      </div>
+    </section>
+
+    <!-- Hinweise zu Schwachstelle 3 -->
+
+    <section id="schwachstelle3" class="vulnerability has-text-centered">
+        <h2>Schwachstelle 3: Beschreibung</h2>
+        <p>Hier wird die Schwachstelle 3 kurz beschrieben.</p>
+  
+        <div class="hint">
+          <h3>Hinweis 1</h3>
+          <p>Dies ist der erste Hinweis zur Schwachstelle 3.</p>
+          <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        </div>
+  
+        <div class="hint hidden">
+          <h3>Hinweis 2</h3>
+          <p>Dies ist der zweite Hinweis zur Schwachstelle 3.</p>
+          <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        </div>
+  
+        <div class="hint hidden">
+          <h3>Hinweis 3</h3>
+          <p>Dies ist der dritte Hinweis zur Schwachstelle 3.</p>
+          <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        </div>
+  
+        <div class="hint hidden">
+          <h3>Hinweis 4</h3>
+          <p>Dies ist der vierte Hinweis zur Schwachstelle 3.</p>
+          <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        </div>
+  
+        <div class="hint hidden">
+          <h3>Hinweis 5</h3>
+          <p>Dies ist der fünfte und letzte Hinweis zur Schwachstelle 3.</p>
+        </div>
+      </section>
+
+      <!-- Hinweise zu Schwachstelle 4 -->
+
+      <section id="schwachstelle4" class="vulnerability has-text-centered">
+        <h2>Schwachstelle 4: Beschreibung</h2>
+        <p>Hier wird die Schwachstelle 4 kurz beschrieben.</p>
+  
+        <div class="hint">
+          <h3>Hinweis 1</h3>
+          <p>Dies ist der erste Hinweis zur Schwachstelle 4.</p>
+          <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        </div>
+  
+        <div class="hint hidden">
+          <h3>Hinweis 2</h3>
+          <p>Dies ist der zweite Hinweis zur Schwachstelle 4.</p>
+          <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        </div>
+  
+        <div class="hint hidden">
+          <h3>Hinweis 3</h3>
+          <p>Dies ist der dritte Hinweis zur Schwachstelle 4.</p>
+          <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        </div>
+  
+        <div class="hint hidden">
+          <h3>Hinweis 4</h3>
+          <p>Dies ist der vierte Hinweis zur Schwachstelle 4.</p>
+          <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        </div>
+  
+        <div class="hint hidden">
+          <h3>Hinweis 5</h3>
+          <p>Dies ist der fünfte und letzte Hinweis zur Schwachstelle 4.</p>
+        </div>
+      </section>
+
+      <!-- Hinweise zu Schwachstelle 5 -->
+
+      <section id="schwachstelle5" class="vulnerability has-text-centered">
+        <h2>Schwachstelle 5: Beschreibung</h2>
+        <p>Hier wird die Schwachstelle 5 kurz beschrieben.</p>
+  
+        <div class="hint">
+          <h3>Hinweis 1</h3>
+          <p>Dies ist der erste Hinweis zur Schwachstelle 5.</p>
+          <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        </div>
+  
+        <div class="hint hidden">
+          <h3>Hinweis 2</h3>
+          <p>Dies ist der zweite Hinweis zur Schwachstelle 5.</p>
+          <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        </div>
+  
+        <div class="hint hidden">
+          <h3>Hinweis 3</h3>
+          <p>Dies ist der dritte Hinweis zur Schwachstelle 5.</p>
+          <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        </div>
+  
+        <div class="hint hidden">
+          <h3>Hinweis 4</h3>
+          <p>Dies ist der vierte Hinweis zur Schwachstelle 5.</p>
+          <button class="button is-primary is-rounded is-medium" onclick="showNextHint(this.parentElement)">Nächster Hinweis</button>
+        </div>
+  
+        <div class="hint hidden">
+          <h3>Hinweis 5</h3>
+          <p>Dies ist der fünfte und letzte Hinweis zur Schwachstelle 5.</p>
+        </div>
+      </section>
+
+    <!-- Weitere Schwachstellen mit Hinweisen hier einfügen -->
+
+  </main>
+
+  <script src="script2.js"></script>
+</body>
+</html>

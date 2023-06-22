@@ -1,0 +1,131 @@
+#category-container {
+    margin-top: 50px;
+  }
+  
+  .category {
+    margin-bottom: 30px;
+  }
+  
+  .description {
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center; /* zentrierte Ausrichtung der Beschreibung */
+
+  }
+  
+  .hint-btn {
+    padding: 5px 10px;
+    font-size: 9px;
+  }
+  
+  .hint-text {
+    margin-top: 20px;
+    font-size: 16px;
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  /* Ändere die Hintergrundfarbe des Headers */
+header {
+    background-color: #dbd4c1;
+    margin-bottom: 10px;  /* Abstand Header und Schwachstelle X: Beschreibung ändern */
+    padding: 20px;
+    text-align: center;
+  }
+
+  body {
+    background-color: #faf8f8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  } 
+
+  /* Ändere die Textfarbe der Überschrift */
+  h1 {
+    color: #000000;
+    /* Verändern des Abstandes zur Überschrift */
+    margin-bottom: 10px; 
+    font-weight: bold;
+    font-size: 24px; /* Schriftgröße ändern */
+    font-family: Consolas, monospace; /* Schriftart ändern - Hier Consolas*/
+    text-decoration: underline;
+  }
+
+  /* Abstand zwischen Schwachstelle-überschrift und Beschreibung der Schwachstelle  */
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px; /* Schriftgröße ändern */
+    font-family: Consolas, monospace; /* Schriftart ändern - Hier Consolas*/ 
+  }
+  
+  /* Ändere die Hintergrundfarbe der Buttons (ohne Bulma)*/
+  /*button {
+    background-color: #eb543d;
+    color: #fff;
+  } */
+  
+  /* Ändere die Farbe der Links in der Navigationsleiste: jetzt nicht benötigt wegen Toolbar unten */
+  /*nav a {
+    color: #fc260a;
+  }  */
+
+  
+  /* Ändere die Farbe der Schwachstellen-Karten */
+  .card {
+    background-color: #9f9d9d;
+  }
+
+
+ /* Änderungen an den Buttons */
+ .button {
+    font-size: 12px; /* Schriftgröße nach Bedarf ändern */
+    font-family: Consolas, monospace; /* Schriftart ändern - Hier Consolas*/
+    margin-top: 10px; /* Abstand zwischen Text und Button ändern */
+    margin-bottom: 30px; /* Abstand nach Bedarf ändern*/
+  }
+
+  
+  .button.is-primary {
+    background-color: #d55959;
+    color: #ffffff;
+  }
+  
+  .button.is-rounded {
+    border-radius: 100px;
+  }
+  
+  .button.is-small {
+    padding: 1px 3px; /* Padding ändern */
+  }
+  
+/* Schwachstellennavigationsleiste oben */
+
+  #toolbar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  #toolbar li {
+    margin-right: 10px;
+  }
+  
+  #toolbar li a {
+    text-decoration: none;
+    color: #4c4b4b;
+    font-weight: bold;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  #toolbar li {
+    display: inline-block;
+    margin-right: 50px; /* Abstand zwischen "Schwachstellenlinks" anpassen */
+  }
